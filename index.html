@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FADE</title>
+</head>
+<body>
+    <div id="fadeMe">
+    </div>
+    <div class="container">
+        <h2>
+                Sixth Mass Extinction
+        </h2>
+        <p>
+            For roughly 2 million years, humans have been roaming this planet, adapting to its harsh environments and proliferating the spread of the our species. Our intelligence and cognition have brought us to a point in history where we view ourselves as separate from the world in which we live. Although we are the among most intelligent of Earth’s species, our growth has lead to the decrease and removal of some of magnificent creatures. Way in which humans harm our environment go far beyond pollution and climate change. The effects of our spread has led to diminishing of resources and habitat loss for thousands of species all over the world. There have been five recorded mass extinctions throughout history and our current practices are accelerating the rate of the Sixth Mass Extinction rapidly. While some of these species may seem minor in comparison to the vans array of animals on our planet, it must be recognized that many of these animals are the pillars and foundation of our existence. 
+
+        </p>
+        <img src="assets/Mass.png" alt="file not found" class="dodo">
+    </div>
+    <script type="text/javascript">
+        var fadeMe = document.getElementById('fadeMe');
+        window.addEventListener('scroll',function(){
+            console.log(window.pageYOffset);
+            fadeMe.style.opacity = window.pageYOffset/3000;
+        });
+    </script>
+</body>
+</html>
